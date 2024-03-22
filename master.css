@@ -1,0 +1,368 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  height: 3500px;
+}
+.hero{
+  background-image: url("into-the-light.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.logo {
+    color: #ff0f45;
+    float: left;
+}
+.hero nav {
+    z-index: 13322;
+    padding: 10px 100px;
+    position: fixed;
+    width: 100%;
+    transition: 0.8s;
+}
+.hero nav.bg {
+    background: #141414;
+}
+.hero .links{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.hero .links ul {
+    list-style: none;
+    text-align: end;
+}
+.hero ul li {
+    display: inline-block;
+}
+.hero ul li a {
+  text-decoration: none;
+  color: #eee;
+  padding: 12px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.hero ul li a:hover {
+  color: #bb0e35;
+}
+.hero ul li a.speacial{
+  color: #bb0e35;
+}
+.hero .hum {
+  display: none;
+  width: 27px;
+  height: 33px;
+  cursor: pointer;
+  position: relative;
+}
+.hero .hum span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 8px 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.hum span:nth-child(2){
+top: 8px;
+}
+.hum span:nth-child(3){
+  top: 16px;
+}
+.hum.active span:first-child{
+  transform: rotate(45deg);
+  background-color: red;
+  top: 0;
+}
+.hum.active span:nth-child(2){
+  opacity: 0;
+}
+.hum.active span:nth-child(3){
+  transform: rotate(-45deg);
+  background-color: red;
+  top: 0;
+}
+.hero .land {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.hero .land h5{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+.hero .land h1 {
+  color: #ff0f45;
+  margin: 10px 0;
+  white-space: nowrap;
+}
+.hero .land p {
+  width: 115px;
+  color: #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: tra 3s linear 0.5s infinite ;
+}
+@keyframes tra {
+  0%{
+    width: 115px;
+  }
+  50%
+  {
+    width: 190px;
+  }
+  100%
+  {
+    width: 115px;
+  }
+}
+@media (max-width:767px) {
+  .hero .hum{
+    float: right;
+    display: block;
+  }
+  .hero ul li {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .hero .links {
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  }
+.links.open{
+  height: 248px;
+}
+.hero ul li a {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.hero nav {
+  padding: 10px 20px;
+}
+}
+.about{
+  padding: 60px 0;
+}
+.about .contaner{
+  text-align: center;
+}
+.about .image,.about .text{
+  display: inline-block;
+  width: 39%;
+}
+.about .image img{
+  width: 96%;
+}
+.about .text {
+  text-align: left;
+}
+.about .text h3 {
+    text-transform: uppercase;
+    color: #0b0b0b;
+    font-size: 25px;
+    position: relative;
+    padding-left: 13px;
+}
+.about .text h3::before{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #ff0f45;
+  top: 0;
+  left: 0;
+}
+.about .text h4 {
+    text-transform: capitalize;
+    color: #0b0b0b;
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+.about .text h4 span {
+    font-weight: normal;
+    font-size: 15px;
+}
+.about .text p {
+    line-height: 1.5;
+    color: #555;
+    font-size: 15px;
+    margin: 14px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #999;
+}
+.about ul li {
+    display: inline-block;
+    text-transform: capitalize;
+}
+.about .text button {
+    border: none;
+    outline: none;
+    background: #ff0f45;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.about .text button:hover{
+  background: #dd1441;
+}
+.about .text button:last-child{
+  margin-left: 7px;
+}
+.about .image {
+  position: relative;
+  overflow: hidden;
+}
+.over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 81%);
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .image:hover .over-lay{
+  top: 0;
+}
+.about .image .over-lay i{
+  font-size: 20px;
+  margin: 4px;
+  color:white;
+}
+@media (max-width:767px) {
+  .about .image {
+    display: block;
+    width: 100%;
+}
+.about .image img {
+  width: 90%;
+}
+.about .text {
+    padding-top: 23px;
+    width: 90%;
+}
+}
+.servises {
+    background-color: #eee;
+    padding: 30px 0;
+}
+.servises h2 {
+text-align: center;
+text-transform: capitalize;
+position: relative;
+}
+
+.servises h2::after {
+    content: '';
+    position: absolute;
+    width: 104px;
+    height: 1px;
+    background: #ff0f45;
+    left: 50%;
+    bottom: -13px;
+    transform: translateX(-50%);
+}
+.servises h2::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 9px;
+    background: #eee;
+    border-bottom: 1px solid #ff0f45;
+    border-top: 1px solid #ff0f45;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+}
+.servises .contaner {
+    text-align: center;
+    margin-top: 55px;
+}
+.servises .contaner .box {
+    transition: 0.5s;
+    width: 20%;
+    display: inline-block;
+    padding: 15px;
+}
+.servises .contaner .box:hover{
+  box-shadow: 2px 2px 10px #aaa;
+  background-color: #fff;
+}
+.servises .contaner .box h3 {
+    margin: 13px 0;
+    white-space: nowrap;
+    font-size: 17px;
+    color: #0b0b0b;
+}
+.servises .contaner .box p{
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+}
+@media (max-width:767px) {
+.servises .contaner .box {
+  display: block;
+  width: 100%;
+  }
+  .servises .contaner .box p {
+      width: 89%;
+      margin: 0 auto;
+  }
+}
+.three{
+  padding: 55px 0;
+}
+.three .num{
+  margin: 15px 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+.three .box {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    text-transform: capitalize;
+}
