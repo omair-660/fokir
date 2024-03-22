@@ -668,24 +668,33 @@ form h2 {
 .yel{
   color:#fcba03;
 }
-.three i{
-  color:#ff0f45;
-  font-size: 28px;
-}
+
+.three i{
+
+  color:#ff0f45;
+
+  font-size: 28px;
+
+}
 
 .starts {
   margin-top: 15px;
 }
-.bor{
-  color: #fcba03;
-  transition: 0.5s;
-}
+
+.bor{
+
+  color: #fcba03;
+
+  transition: 0.5s;
+
+}
 /*
 .bor:hover{
   -webikt-text-fill-color; #fcba03;
   
 }
-*/
+
+*/
 
 
 
@@ -754,15 +763,24 @@ footer a  {
   text-decoration: none;
   color:#fff;
 }
-footer a:nth-child(1):hover{
-  color:#4267B2;
-}
+
+footer a:nth-child(1):hover{
+
+  color:#4267B2;
+
+}
 footer a:nth-child(2):hover{
-  color:#cd486b;
-}
+
+  color:#cd486b;
+
+}
 footer a:nth-child(3):hover{
-  color:#25D366;
-}
+
+  color:#25D366;
+
+}
 footer a:nth-child(4):hover{
-  color:#aaa;
-}
+
+  color:#aaa;
+
+}
