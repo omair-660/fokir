@@ -167,7 +167,7 @@ top: 8px;
   transition: 0.5s;
   }
 .links.open{
-  height: 248px;
+  height: 320px;
 }
 .hero ul li a {
   font-size: 15px;
@@ -325,6 +325,9 @@ position: relative;
     left: 50%;
     bottom: -18px;
     transform: translateX(-50%);
+}
+.port h2::before ,.feed h2::before,form h2::before{
+  background-color: #fff;
 }
 .servises .contaner {
     text-align: center;
