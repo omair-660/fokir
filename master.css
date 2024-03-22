@@ -5,8 +5,7 @@
   scroll-behavior: smooth;
 }
 body{
-  font-family: sans-serif;
-  
+  font-family: "Cairo", sans-serif;
 }
 .hero{
   background-image: url("into-the-light.jpg");
@@ -624,7 +623,7 @@ input[type="mail"] {
 }
 .in{
   float: left;
-margin-top: 31px;
+margin-top: 42px;
 }
 .in2, textarea{
   width: 90%;
@@ -712,7 +711,7 @@ form h2 {
   overflow: hidden;
   color: #ebebeb;
   /* text-align: end; */
-  font-size: 38px;
+  font-size: 35px;
   background: #ff0f45;
   border-radius: 50%;
   width: 48px;
@@ -723,7 +722,7 @@ form h2 {
   text-decoration: none;
   animation: move  0.7s infinite 0s ease-in-out alternate;
   position: fixed;
-  bottom: 16px;
+  bottom: 14px;
   right: 19px;
   z-index: 9999;
   display: flex;
