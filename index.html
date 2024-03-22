@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>fokir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="master.css">
   </head>
-  <body>
-    <div class="hero">
+  <body>  
+     <a name="scr"></a>
+    <a href="#scr" class="scr" id="scroll" title="اذهب للاعلي">^</a>
+    <div class="hero" id="hero">
       <nav id="nav">
         <div class="logo">
-          <h1>fokir</h1>
+          <h1>Fokir</h1>
         </div>
         <div class="links" id="links">
           <ul>
-            <li> <a href="#" class="speacial">home</a> </li>
-            <li> <a href="#">about</a> </li>
-            <li> <a href="#">portfolio</a> </li>
-            <li> <a href="#">testtimonial</a> </li>
-            <li> <a href="#">blog</a> </li>
-            <li> <a href="#">contact</a> </li>
+            <li> <a href="#hero" class="speacial">home</a> </li>
+            <li> <a href="#about">about</a> </li>
+            <li> <a href="#port">portfolio</a> </li>
+            <li> <a href="#cleint">testtimonial</a> </li>
+            <li> <a href="#feed">blog</a> </li>
+            <li> <a href="#con">contact</a> </li>
           </ul>
         </div>
         <div class="hum" id="hum">
@@ -36,15 +38,14 @@
         <p>profesional web developer</p>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <div class="contaner">
         <div class="image">
           <img src="work-7.jpg" alt="">
         <div class="over-lay">
-          
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>        
-          <i class="fa-brands fa-google"></i>         
+         <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google"></i>
           <i class="fa-brands fa-github"></i>
         </div>
         </div>
@@ -60,45 +61,210 @@
              <h4> locatin: <span>el-sharqia zaqaziq</span> </h4>
              <h4> freelane: <span>available</span> </h4>
              <h4> e-mail: <span>elrosomair@gmail.com</span> </h4>
-             <button>download cv  </button>
-             <button>here me </button>
+             <button>download cv <i class="fa-solid fa-download"></i></button>
+             <button>here me <i class="fa-solid fa-paper-plane"></i></button>
         </div>
       </div>
     </div>
-    <div class="servises">
+    <div class="servises" id="port">
       <h2>our servises</h2>
       <div class="contaner">
         <div class="box">
-          <i></i>
+          <i class="fa-solid fa-pen-ruler"></i>
           <h3>ui/ux design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  ut labore et</p>
         </div>
         <div class="box">
-          <i></i>
+          <i class="fa-solid fa-laptop-code"></i>
           <h3>app development</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  ut labore et</p>
         </div>
         <div class="box">
-          <i></i>
+         <i class="fa-solid fa-bezier-curve"></i>
           <h3>product design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  ut labore et</p>
         </div>
         <div class="box">
-          <i></i>
+          <i class="fa-solid fa-gears"></i>
           <h3>ui/ux design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  ut labore et</p>
         </div>
+        <div class="clear">  </div>
+
       </div>
     </div>
-   
-<section class="three">
+    <div class="port">
+      <h2>our portfolio </h2>
+      <div class="contaner">
+        <div class="links">
+          <button class="speacial" id="link1">All</button>
+          <button id="link2">graghic</button>
+          <button id="link3">web design</button>
+          <button id="link4">branding</button>
+        </div>
+          <div class="left">
+            <div class="box" id="img1">
+              <img src="1.jpg" alt="Clock image">
+              <div class="over-lay2">Clock</div>
+            </div>
+            <div class="box" id="img2">
+              <img src="2.jpg" alt="Hand Watch image">
+              <div class="over-lay2">Hand Watch</div>
+            </div>
+            <div class="box" id="img3">
+              <img src="3.jpg" alt="code image">
+              <div class="over-lay2">code</div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="box" id="img4">
+              <img src="4.jpg" alt="shose image">
+              <div class="over-lay2">shose</div>
+            </div>
+            <div class="box" id="img5">
+              <img src="5.jpg" alt="miller image">
+              <div class="over-lay2">miller</div>
+            </div>
+            <div class="box" id="img6">
+              <img src="6.jpg" alt="product image">
+              <div class="over-lay2">last product</div>
+            </div>
+          </div>
+          <div class="clear"></div>
+      </div>
+    </div>
+<section class="three" id="cleint">
   <div class="nums">
-    <div class="num" data-goal="100">0</div>
-    <div class="num" data-goal="500">0</div>
-    <div class="num" data-goal="300">0</div>
+    <div class="box">
+          <i class="fa-solid fa-people-line"></i>
+      <div class="num" data-goal="48">0</div>
+      <p>team members</p>
+    </div>
+
+    <div class="box">
+          <i class="fa-solid fa-file"></i>
+      <div class="num" data-goal="82">0</div>
+      <p>complete projects</p>
+    </div>
+
+    <div class="box">
+          <i class="fa-solid fa-cloud-arrow-down"></i>
+      <div class="num" data-goal="432">0</div>
+      <p>files download</p>
+    </div>
+
+    <div class="box">
+          <i class="fa-solid fa-mug-hot"></i>
+      <div class="num" data-goal="288">0</div>
+      <p>lines of codes</p>
+    </div>
   </div>
 </section>
 
+<div class="feed" id="feed">
+  <h2>client's feedback</h2>
+  <div class="contaner">
+    <div class="image">
+      <img src="f.jpg" alt="client image">
+    </div>
+    <div class="text">
+      <h3>omair mohammed</h3>
+      <div class="locatin">
+
+        <p>zaqaziq</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint .</p>
+        <div class="starts">
+          <i class="fa-solid fa-star yel"></i>
+          <i class="fa-solid fa-star yel"></i>
+          <i class="fa-solid fa-star yel"></i>
+          <i class="fa-solid fa-star yel"></i>
+          <i class="fa-regular fa-star bor"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spa">
+    <span></span>
+    <span title="Noo"></span>
+  </div>
+</div>
+<div class="blog">
+  <h2>our blog</h2>
+<div class="contaner">
+  <div class="item">
+    <div class="image">
+      <img src="blog1.jpg" alt="">
+    </div>
+    <div class="text">
+      <p>23/3/2023</p>
+      <h4>web design blog post</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#">read more</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      
+      <iframe src="https://www.youtube.com/embed/jG6fQkZ1C7k?si=2wrMqTrctA0ZN8Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="text">
+      <p>22/6/2003</p>
+      <h4>development blog post</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#">read more</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="blog2.jpg" alt="">
+    </div>
+    <div class="text">
+      <p>18/9/2022</p>
+      <h4>full width blog post</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#">read more</a>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<form action="mailto:elrosyomair@gmail.com" method="post" enctype="text/plain" id="con">
+  <h2>contact us</h2>
+  <div class="top">
+    <input type="text" name="name" placeholder="Name" class="in" required="" id="input1">
+    <br>
+   
+    <input type="mail" name="mail" placeholder="E-mail" required="" id="input2" >
+     <label for="input2">*</label>
+  </div>
+  <div class="clear"></div>
+  <input type="text" name="message" placeholder="Subject" class="in2">
+  <br>
+  <textarea name="message" placeholder="Message for me" required=""></textarea>
+  <br>
+  <input type="submit" name="submit" value="send message" id="sub">
+</form>
+<footer>
+<div class="social">
+  <a href="https://www.facebook.com/omair.rajeh" target="_blanck"<i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/omair_660" target="_blanck"<i class="fa-brands fa-instagram"></i> </a>
+  <a href="https://wsend.co/201288642158" target="_blanck" <i class="fa-brands fa-whatsapp"></i></a>
+  <a href="" target="_blanck"<i class="fa-brands fa-github"></i></a>
+  
+  <p>copyright 2024 &copy by <span><a href="https://omair-660.github.io/portfolioo/" target="_blank">omair</span></a> all right eravese</p>
+</div>
+</footer>
     <script src="main.js"></script>
   </body>
 </html>
