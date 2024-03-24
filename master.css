@@ -8,7 +8,7 @@ body{
   font-family: "Cairo", sans-serif;
 }
 .hero{
-  background-image: url("into-the-light.jpg");
+  background-image: url("../img/into-the-light.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -131,15 +131,15 @@ top: 8px;
 }
 @keyframes tra {
   0%{
-    width: 115px;
+    width: 110px;
   }
   50%
   {
-    width: 200px;
+    width: 190px;
   }
   100%
   {
-    width: 115px;
+    width: 110px;
   }
 }
 @media (max-width:767px) {
@@ -167,7 +167,7 @@ top: 8px;
   transition: 0.5s;
   }
 .links.open{
-  height: 320px;
+  height: 385px;
 }
 .hero ul li a {
   font-size: 15px;
@@ -182,17 +182,64 @@ top: 8px;
 }
 .about .contaner{
   text-align: center;
+  overflow: hidden;
+  padding-top: 20px;
 }
 .about .image,.about .text{
   display: inline-block;
   width: 39%;
 }
-.about .image img{
-  width: 96%;
+.about .image{
+  height: 490px;
+  position: relative;
+}
+.about .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+.about .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    border: 4px solid #353535;
+    left: -20px;
+    top: -11px;
+    z-index: -1;
+    height: 97%;
+    border-radius: 6px;
+}
+.over-lay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 81%);
+  top: 117%;
+  left: 0;
+  transition: 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 16px;
+}
+.about .image:hover .over-lay{
+  opacity: 1;
+  top: 0;
+}
+.about .image .over-lay i{
+  font-size: 20px;
+  margin: 8px;
+  color:white;
+  transition: 0.5s;
 }
 .about .text {
   text-align: left;
+  vertical-align: top;
+  margin-left: 8px;
 }
+
 .about .text h3 {
     text-transform: uppercase;
     color: #0b0b0b;
@@ -250,44 +297,32 @@ button,input[type="submit"] {
 .about .text button:last-child{
   margin-left: 7px;
 }
-.about .image {
-  position: relative;
-  overflow: hidden;
-}
-.over-lay {
-    position: absolute;
-    width: 96%;
-    height: 100%;
-    background: rgb(0 0 0 / 81%);
-    top: 100%;
-    left: 0;
-    transition: 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about .image:hover .over-lay{
-  top: 0;
-}
-.about .image .over-lay i{
-  font-size: 20px;
-  margin: 8px;
-  color:white;
-  transition: 0.5s;
-}
 
 .about .image .over-lay i:hover
 {
   color:#ff0f45;
 }
 @media (max-width:767px) {
+  .about .contaner{
+    overflow: unset;
+  }
   .over-lay {
+    width: 90%;
     left: 50%;
     transform: translate(-50%);
 }
   .about .image {
     display: block;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.about .image::before {
+  position: unset;
+  display: none;
+}
+.about .image img{
+  width: 90%;
 }
 .about .text {
     padding-top: 23px;
@@ -319,7 +354,7 @@ position: relative;
     position: absolute;
     width: 48px;
     height: 9px;
-    background: #eee;
+    background: transparent;
     border-bottom: 1px solid #ff0f45;
     border-top: 1px solid #ff0f45;
     left: 50%;
@@ -327,7 +362,7 @@ position: relative;
     transform: translateX(-50%);
 }
 .port h2::before ,.feed h2::before,form h2::before{
-  background-color: #fff;
+  background-color: transparent;
 }
 .servises .contaner {
     text-align: center;
@@ -395,7 +430,12 @@ position: relative;
     text-transform: capitalize;
 }
 .port{
+  width: 100%;
   padding: 55px 0;
+}
+.port .contaner{
+  width: 96%;
+  margin: 0 auto;
 }
 .port .contaner .links {
   margin: 55px 0;
@@ -415,7 +455,7 @@ position: relative;
 }
 .over-lay2 {
     position: absolute;
-    width: 96%;
+    width: 100%;
     height: 100%;
     background: rgb(0 0 0 / 81%);
     top: 100%;
@@ -428,9 +468,11 @@ position: relative;
   color: #eee;
   font-size: 19px;
   letter-spacing: 1px;
+  opacity: 0;
 }
 .port .box:hover .over-lay2{
   top: 0;
+  opacity: 1;
 }
 .port .contaner .links button{
   border: none;
@@ -596,18 +638,24 @@ margin-top: 18px;
 .blog .item a:hover{
   color: #ff0f45;
 }
+.blog .item i{
+  margin-left: 6px;
+}
 .blog .text{
   text-align: left;
   padding: 8px;
 }
 form {
-    width: 90%;
-    text-align: center;
+    width: 100%;
     margin: 30px 0;
+}
+form .contaner {
+    width: 96%;
+    margin: 0 auto;
 }
 form .top input {
     display: inline-block;
-    width: 45%;
+    width: 48%;
 }
 input {
     border: 2px solid #eee;
@@ -620,21 +668,27 @@ textarea {
    border: 2px solid #eee;
    border-radius: 4px;
    outline: none;
+   height: 105px;
+}
+input:focus ,textarea:focus{
+  transition: 0.5s;
+  border-color: #930d2bba;
+  box-shadow: 2px 2px 10px #ff0f4545;
 }
 input[type="mail"] {
     float: right;
 }
-.in{
-  float: left;
-margin-top: 42px;
+.in {
+    float: left;
+    margin-top: 30px;
+    width: 46%;
+    margin-right: 11px;
 }
 .in2, textarea{
-  width: 90%;
+  width: 96%;
 padding: 12px;
 }
-.top {
-    margin-left: 33px;
-}
+
 form button {
     margin-top: 14px;
 }
@@ -668,41 +722,27 @@ form h2 {
 .yel{
   color:#fcba03;
 }
-
-.three i{
-
-  color:#ff0f45;
-
-  font-size: 28px;
-
-}
+.three i{
+  color:#ff0f45;
+  font-size: 28px;
+}
 
 .starts {
   margin-top: 15px;
 }
-
-.bor{
-
-  color: #fcba03;
-
-  transition: 0.5s;
-
-}
+.bor{
+  color: #fcba03;
+  transition: 0.5s;
+}
 /*
 .bor:hover{
   -webikt-text-fill-color; #fcba03;
-  
+
 }
-
-*/
-
-
-
-
-
+*/
 
 @media (max-width:767px) {
-  
+
   .blog img , iframe{
   width: 100%;
   height: auto;
@@ -714,8 +754,10 @@ form h2 {
     width: auto;
     float: none;
   }
-  .top {
-    margin-left: 20px;
+  form .top input ,.in{
+      width: 46%;
+    float: none;
+    width:94%;
   }
 }
 
@@ -763,24 +805,18 @@ footer a  {
   text-decoration: none;
   color:#fff;
 }
-
-footer a:nth-child(1):hover{
-
-  color:#4267B2;
-
-}
+footer a:nth-child(1):hover{
+  color:#4267B2;
+}
 footer a:nth-child(2):hover{
-
-  color:#cd486b;
-
-}
+  color:#cd486b;
+}
 footer a:nth-child(3):hover{
-
-  color:#25D366;
-
-}
+  color:#25D366;
+}
 footer a:nth-child(4):hover{
-
-  color:#aaa;
-
+  color:#aaa;
+}
+::selection{
+  background: #ff0f4557;
 }
