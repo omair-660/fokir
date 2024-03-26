@@ -7,6 +7,15 @@
 body{
   font-family: "Cairo", sans-serif;
 }
+::-webkit-scrollbar-thumb {
+    background-color: #ff0f4557; 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.5s;
+}
+::webkit-scrollbar-thumb:hover{
+  background-color: #ff1939;
+}
 .hero{
   background-image: url("into-the-light.jpg");
   background-position: center;
